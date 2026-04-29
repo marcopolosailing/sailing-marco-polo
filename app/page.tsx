@@ -33,7 +33,7 @@ export default function Home() {
             Always home.
           </h1>
           <p className="mt-6 font-[family-name:var(--font-inter)] text-[#F5EDD8]/70 text-base md:text-lg tracking-widest uppercase font-light">
-            A four-year circumnavigation. One man. One dog. No plan.
+            A four-year circumnavigation. One man. One dog. The world is the plan.
           </p>
         </div>
 
@@ -127,7 +127,7 @@ export default function Home() {
             But he knows Mark, and that&apos;s enough. Wherever this boat goes, Polo goes. Full stop.
           </p>
           <p className="font-[family-name:var(--font-cormorant)] italic text-[#C8A96E] text-lg">
-            Polo. Ship&apos;s dog. Age 4. Opinions: strong.
+            Polo. Ship&apos;s dog. Age 9 months. Opinions: strong.
           </p>
         </div>
       </section>

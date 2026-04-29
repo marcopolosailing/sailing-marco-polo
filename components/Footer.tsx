@@ -20,21 +20,21 @@ export default function Footer() {
         {/* Social links */}
         <div className="flex items-center gap-6">
           <Link
-            href="#"
+            href="https://www.youtube.com/@SailingMarcoPolo"
             aria-label="YouTube"
             className="text-[#F5EDD8]/50 hover:text-[#C8A96E] transition-colors font-[family-name:var(--font-inter)] text-xs tracking-widest uppercase"
           >
             YouTube
           </Link>
           <Link
-            href="#"
+            href="https://www.tiktok.com/@sailing.marco.pol"
             aria-label="TikTok"
             className="text-[#F5EDD8]/50 hover:text-[#C8A96E] transition-colors font-[family-name:var(--font-inter)] text-xs tracking-widest uppercase"
           >
             TikTok
           </Link>
           <Link
-            href="#"
+            href="https://www.instagram.com/markbabraham"
             aria-label="Instagram"
             className="text-[#F5EDD8]/50 hover:text-[#C8A96E] transition-colors font-[family-name:var(--font-inter)] text-xs tracking-widest uppercase"
           >
