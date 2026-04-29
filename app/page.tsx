@@ -144,7 +144,7 @@ export default function Home() {
             className="font-[family-name:var(--font-cormorant)] text-[#F5EDD8] font-light leading-tight mb-10 md:mb-16"
             style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)" }}
           >
-            The Mission
+            The Journey
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#2A3347]">
