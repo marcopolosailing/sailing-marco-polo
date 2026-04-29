@@ -40,121 +40,135 @@ export default function VoyagePage() {
       </section>
 
       {/* Intro */}
-      <section className="py-20 px-6 md:px-12">
+      <section className="py-16 md:py-20 px-5 md:px-12">
         <div className="max-w-3xl mx-auto">
           <div className="w-12 h-px bg-[#C8A96E] mb-10" />
           <p
-            className="font-[family-name:var(--font-cormorant)] text-[#F5EDD8] font-light leading-relaxed"
+            className="font-[family-name:var(--font-cormorant)] text-[#F5EDD8] font-light leading-relaxed mb-6"
             style={{ fontSize: "clamp(1.3rem, 2.5vw, 1.8rem)" }}
           >
-            A circumnavigation. The long way. No Red Sea shortcuts, no canal shortcuts.
-            Ocean to ocean, cape to cape, the way it was meant to be done.
+            There is no fixed itinerary. That&apos;s the point.
+          </p>
+          <p className="font-[family-name:var(--font-inter)] text-[#F5EDD8]/60 text-sm leading-relaxed">
+            What follows is the broad shape of the journey — the seasons, the oceans, the general
+            direction. The details will be decided by weather, curiosity, and whatever port feels
+            right at the time.
           </p>
         </div>
       </section>
 
       {/* Route Map placeholder */}
-      <section className="py-12 px-6 md:px-12">
+      <section className="py-6 px-5 md:px-12">
         <div className="max-w-6xl mx-auto">
-          {/* PHOTO: Replace src with real image when available */}
+          {/* PHOTO: Replace with route map image when available */}
           <div className="aspect-[21/9] bg-[#2A3347] flex flex-col items-center justify-center gap-4 rounded-sm">
-            <svg
-              width="48"
-              height="48"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#C8A96E"
-              strokeWidth="1"
-              className="opacity-40"
-            >
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C8A96E" strokeWidth="1" className="opacity-40">
               <circle cx="12" cy="12" r="10" />
               <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
             </svg>
             <span className="font-[family-name:var(--font-inter)] text-[#F5EDD8]/30 text-sm tracking-widest uppercase text-center px-4">
               ROUTE MAP — coming soon
             </span>
-            <span className="font-[family-name:var(--font-inter)] text-[#F5EDD8]/20 text-xs">
-              Interactive world map with planned route
-            </span>
           </div>
         </div>
       </section>
 
-      {/* Route breakdown */}
-      <section className="py-20 px-6 md:px-12">
-        <div className="max-w-6xl mx-auto">
-          <h2
-            className="font-[family-name:var(--font-cormorant)] text-[#F5EDD8] font-light leading-tight mb-16"
-            style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)" }}
-          >
-            The Route
-          </h2>
-
-          <div className="space-y-0">
-            {[
-              {
-                leg: "01",
-                name: "The UK to the Canaries",
-                description:
-                  "Departure from the UK. South through Biscay — the traditional baptism of fire — then down the Iberian coast to the Canary Islands. Preparation. Final prep.",
-                timeline: "June – August 2026",
-              },
-              {
-                leg: "02",
-                name: "The Atlantic Crossing",
-                description:
-                  "Westward on the trade winds. The classic ARC route or close to it. Two to three weeks of open ocean. The passage that changes you.",
-                timeline: "November 2026",
-              },
-              {
-                leg: "03",
-                name: "The Caribbean & South America",
-                description:
-                  "East Caribbean. Then south, tracking the coast of South America toward the bottom of the world.",
-                timeline: "2026 – 2027",
-              },
-              {
-                leg: "04",
-                name: "Cape Horn & the South Atlantic",
-                description:
-                  "Not Cape of Good Hope first — we go west before we go east. Cape Horn or the Falklands. The violent bottom of the planet.",
-                timeline: "2027",
-              },
-              {
-                leg: "05",
-                name: "Cape of Good Hope & Indian Ocean",
-                description:
-                  "South Africa. Then east. The Indian Ocean. Madagascar, Réunion, the Maldives, Sri Lanka. Slow passages through warm water.",
-                timeline: "2027 – 2028",
-              },
-              {
-                leg: "06",
-                name: "Southeast Asia & the Pacific",
-                description:
-                  "Into the Pacific from Southeast Asia. The big crossing. The Pacific islands. New Zealand. The final arc home.",
-                timeline: "2028 – 2029",
-              },
-            ].map((leg, i) => (
-              <div
-                key={i}
-                className="grid md:grid-cols-[80px_1fr_200px] gap-6 py-10 border-t border-[#2A3347] items-start"
+      {/* Phase 1 */}
+      <section className="py-16 md:py-20 px-5 md:px-12">
+        <div className="max-w-3xl mx-auto">
+          <div className="flex items-baseline gap-6 mb-8">
+            <span className="font-[family-name:var(--font-cormorant)] text-[#C8A96E] text-5xl font-light leading-none">01</span>
+            <div>
+              <h2
+                className="font-[family-name:var(--font-cormorant)] text-[#F5EDD8] font-light leading-tight"
+                style={{ fontSize: "clamp(1.6rem, 3vw, 2.5rem)" }}
               >
-                <span className="font-[family-name:var(--font-cormorant)] text-[#C8A96E] text-4xl font-light leading-none">
-                  {leg.leg}
-                </span>
-                <div>
-                  <h3 className="font-[family-name:var(--font-cormorant)] text-[#F5EDD8] text-2xl font-light mb-3">
-                    {leg.name}
-                  </h3>
-                  <p className="font-[family-name:var(--font-inter)] text-[#F5EDD8]/60 text-sm leading-relaxed">
-                    {leg.description}
-                  </p>
-                </div>
-                <p className="font-[family-name:var(--font-inter)] text-[#F5EDD8]/40 text-sm">
-                  {leg.timeline}
-                </p>
-              </div>
-            ))}
+                Learning the Boat
+              </h2>
+              <p className="font-[family-name:var(--font-inter)] text-[#C8A96E] text-xs tracking-[0.2em] uppercase mt-1">
+                Mediterranean — June to November 2026
+              </p>
+            </div>
+          </div>
+          <div className="space-y-4 font-[family-name:var(--font-inter)] text-[#F5EDD8]/65 text-sm leading-relaxed border-t border-[#2A3347] pt-8">
+            <p>
+              Marco Polo departs Vigo in May 2026, sailing south past Cape Finisterre, down the
+              Portuguese coast, through the Strait of Gibraltar, and into the Mediterranean. The
+              first solo passage is already a deadline — a friend&apos;s wedding in Rome in June.
+              Marbella to Civitavecchia, solo, with a dog, and a suit in a dry bag.
+            </p>
+            <p>
+              The Mediterranean months are about learning. Learning the boat, the systems, the
+              rhythm of life offshore. The South of France, the Italian coast, the islands. Six
+              months of sailing that feels like living.
+            </p>
+            <p>
+              By November, Marco Polo is hauled out. Two months of winter work — rigging, systems,
+              preparation. Everything that needs to be right before crossing an ocean.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Phase 2 */}
+      <section className="py-16 md:py-20 px-5 md:px-12" style={{ backgroundColor: "#0D1525" }}>
+        <div className="max-w-3xl mx-auto">
+          <div className="flex items-baseline gap-6 mb-8">
+            <span className="font-[family-name:var(--font-cormorant)] text-[#C8A96E] text-5xl font-light leading-none">02</span>
+            <div>
+              <h2
+                className="font-[family-name:var(--font-cormorant)] text-[#F5EDD8] font-light leading-tight"
+                style={{ fontSize: "clamp(1.6rem, 3vw, 2.5rem)" }}
+              >
+                The Atlantic
+              </h2>
+              <p className="font-[family-name:var(--font-inter)] text-[#C8A96E] text-xs tracking-[0.2em] uppercase mt-1">
+                Canary Islands to the Caribbean — January 2027
+              </p>
+            </div>
+          </div>
+          <div className="space-y-4 font-[family-name:var(--font-inter)] text-[#F5EDD8]/65 text-sm leading-relaxed border-t border-[#2A3347] pt-8">
+            <p>
+              In January, the boat is back in the water and heading south. The Canary Islands —
+              where sailors have been stopping to provision and wait for the trade winds since the
+              age of discovery.
+            </p>
+            <p>
+              Then the crossing. 2,700 nautical miles of open ocean. Trade winds. Flying fish.
+              Night watches. The particular silence of being three weeks from the nearest land.
+            </p>
+            <p className="font-[family-name:var(--font-cormorant)] italic text-[#F5EDD8]/80 text-lg">
+              Landfall in the Caribbean or the Bahamas — not yet decided. That&apos;s the beauty of it.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Phase 3 */}
+      <section className="py-16 md:py-20 px-5 md:px-12">
+        <div className="max-w-3xl mx-auto">
+          <div className="flex items-baseline gap-6 mb-8">
+            <span className="font-[family-name:var(--font-cormorant)] text-[#C8A96E] text-5xl font-light leading-none">03</span>
+            <div>
+              <h2
+                className="font-[family-name:var(--font-cormorant)] text-[#F5EDD8] font-light leading-tight"
+                style={{ fontSize: "clamp(1.6rem, 3vw, 2.5rem)" }}
+              >
+                The World
+              </h2>
+              <p className="font-[family-name:var(--font-inter)] text-[#C8A96E] text-xs tracking-[0.2em] uppercase mt-1">
+                2027 and beyond
+              </p>
+            </div>
+          </div>
+          <div className="space-y-4 font-[family-name:var(--font-inter)] text-[#F5EDD8]/65 text-sm leading-relaxed border-t border-[#2A3347] pt-8">
+            <p>
+              After the Caribbean, the route opens up completely. Panama and the Pacific. French
+              Polynesia. Perhaps south through South America first. Perhaps not.
+            </p>
+            <p className="font-[family-name:var(--font-cormorant)] italic text-[#F5EDD8]/80 text-lg">
+              The world is the plan. The only firm commitment is to keep going.
+            </p>
           </div>
         </div>
       </section>
@@ -284,44 +298,8 @@ export default function VoyagePage() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-20 px-6 md:px-12">
-        <div className="max-w-3xl mx-auto">
-          <h2
-            className="font-[family-name:var(--font-cormorant)] text-[#F5EDD8] font-light leading-tight mb-16"
-            style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)" }}
-          >
-            The Timeline
-          </h2>
-          <div className="space-y-0">
-            {[
-              { date: "Now", event: "Preparation & outfitting" },
-              { date: "Early 2026", event: "Sea trials & final preparations" },
-              { date: "June 2026", event: "Departure" },
-              { date: "Late 2026", event: "Atlantic crossing" },
-              { date: "2027", event: "South America & Cape Horn" },
-              { date: "2028", event: "Indian Ocean & Southeast Asia" },
-              { date: "2029", event: "Pacific & homeward" },
-              { date: "2030", event: "Return" },
-            ].map((item, i) => (
-              <div
-                key={i}
-                className="grid grid-cols-[140px_1fr] gap-6 py-6 border-t border-[#2A3347] items-center"
-              >
-                <span className="font-[family-name:var(--font-inter)] text-[#C8A96E] text-xs tracking-widest uppercase">
-                  {item.date}
-                </span>
-                <span className="font-[family-name:var(--font-inter)] text-[#F5EDD8]/70 text-sm">
-                  {item.event}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
-      <section className="py-20 px-6 md:px-12 border-t border-[#2A3347]">
+      <section className="py-16 md:py-20 px-5 md:px-12 border-t border-[#2A3347]">
         <div className="max-w-3xl mx-auto text-center">
           <p
             className="font-[family-name:var(--font-cormorant)] italic text-[#F5EDD8]/50 mb-8"
