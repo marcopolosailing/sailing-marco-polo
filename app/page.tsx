@@ -152,11 +152,10 @@ export default function Home() {
             <div className="bg-[#0A0F1A] py-8 md:py-0 px-0 md:px-12 first:pl-0 last:pr-0">
               <div className="w-8 h-px bg-[#C8A96E] mb-6 md:mb-8" />
               <h3 className="font-[family-name:var(--font-cormorant)] text-[#F5EDD8] text-2xl font-light mb-4">
-                The Route
+                The Voyage
               </h3>
               <p className="font-[family-name:var(--font-inter)] text-[#F5EDD8]/60 text-sm leading-relaxed">
-                Cape of Good Hope, not the Red Sea. Atlantic, Indian Ocean, Pacific. The long way.
-                The hard way. The only way.
+                There is no fixed itinerary. That&apos;s the point. The plan is to leave. The rest will take care of itself.
               </p>
             </div>
 
